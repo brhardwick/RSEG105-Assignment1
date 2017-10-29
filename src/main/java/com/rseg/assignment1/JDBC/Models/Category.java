@@ -1,4 +1,4 @@
-package com.rseg.assignment1.part2;
+package com.rseg.assignment1.JDBC.Models;
 
 import java.util.Iterator;
 import java.util.List;
@@ -17,7 +17,12 @@ public class Category {
     private List<Book> booksList; 
     private Map<String, Book> booksMap;
 
-    
+    public String toString()
+    {
+    	String s = "";
+    	s = "(ID: "+this.id + ", Name: " + this.name + ") ";
+    	return s;
+    }
     public void setId(Long id)
     {
     	this.id=id;
@@ -69,21 +74,21 @@ public class Category {
         }
         return s;
     }
-    
-private String printSet(Set<Book> st) {
-        
-        String s = "";
-        Iterator it = st.iterator();
-        
-        while (it.hasNext()) {
-        	Book CurrentBook = (Book)it.next();
-            s =s + CurrentBook.Print();
-            
-            it.remove(); // avoids a ConcurrentModificationException
-        }
-        
-        return s;
-    }
+
+	private String printSet(Set<Book> st) {
+
+		String s = "";
+		Iterator it = st.iterator();
+
+		while (it.hasNext()) {
+			Book CurrentBook = (Book) it.next();
+			s = s + CurrentBook.Print();
+
+			it.remove(); // avoids a ConcurrentModificationException
+		}
+
+		return s;
+	}
     
     
     private void PrintStructure(Map map)

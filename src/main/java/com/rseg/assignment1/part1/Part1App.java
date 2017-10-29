@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-import com.rseg.assignment1.DAO.Category;
+import com.rseg.assignment1.JDBC.Models.*;
 
 
 @SpringBootApplication

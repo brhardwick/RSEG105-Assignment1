@@ -1,14 +1,14 @@
-package com.rseg.assignment1.DAO;
+package com.rseg.assignment1.JDBC.Models;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class Book {
-    private Long id;
-    private String isbn;
-    private String title;
-    private float price;
+    protected Long id;
+    protected String isbn;
+    protected String title;
+    protected float price;
     
     public Long getId()
     {
@@ -49,7 +49,10 @@ public class Book {
     {
     	this.price = price;
     }
-    
+    public String toString()
+    {
+    	return Print();
+    }
     public String Print()
     {
     	String s = "";
