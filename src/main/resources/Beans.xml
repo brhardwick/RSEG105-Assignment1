@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="Gatsby" class="com.rseg.assignment1.Book">
+
+		<property name="id" value="1" />
+		<property name="isbn" value="123456435" />
+		<property name="title" value="The Great Gatsby" />
+		<property name="price" value="10.25" />
+	</bean>
+
+	<bean id="ProSpring" class="com.rseg.assignment1.Book">
+
+		<property name="id" value="101" />
+		<property name="isbn" value="143026151" />
+		<property name="title" value="Pro Spring" />
+		<property name="price" value="1000.25" />
+	</bean>
+
+
+	<bean id="Java8inAction" class="com.rseg.assignment1.Book">
+
+		<property name="id" value="102" />
+		<property name="isbn" value="1617291994" />
+		<property name="title" value="Java 8 in Action" />
+		<property name="price" value="30.34" />
+	</bean>
+
+
+	<bean id="JavaSE8fortheReallyImpatient" class="com.rseg.assignment1.Book">
+
+		<property name="id" value="103" />
+		<property name="isbn" value="0321927761" />
+		<property name="title" value="Java SE8 for the Really Impatient" />
+		<property name="price" value="34.46" />
+	</bean>
+
+	<bean id="Java" class="com.rseg.assignment1.Category">
+		<property name="id" value="1"></property>
+		<property name="name" value="Java"></property>
+		<property name="booksSet">
+			<set>
+				<ref bean="ProSpring" />
+				<ref bean="Java8inAction" />
+				<ref bean="JavaSE8fortheReallyImpatient" />
+
+			</set>
+		</property>
+	</bean>
+	<bean id="Fiction" class="com.rseg.assignment1.Category">
+		<property name="id" value="2"></property>
+		<property name="name" value="Fiction"></property>
+		<property name="booksMap">
+			<map>
+				<entry key="Catcher In the Rye">
+					<bean class="com.rseg.assignment1.Book">
+						<property name="id" value="2" />
+						<property name="isbn" value="1234564" />
+						<property name="title" value="Catcher in the Rye" />
+						<property name="price" value="1.25" />
+					</bean>
+				</entry>
+				<entry key="The Great Gatsby">
+					<ref bean="Gatsby" />
+				</entry>
+
+			</map>
+		</property>
+	</bean>
+
+	<bean id="History" class="com.rseg.assignment1.Category">
+		<property name="id" value="3"></property>
+		<property name="name" value="History"></property>
+		<property name="booksList">
+			<list>
+				<bean class="com.rseg.assignment1.Book">
+					<property name="id" value="201" />
+					<property name="isbn" value="159420487X" />
+					<property name="title" value="Grant" />
+					<property name="price" value="23.99" />
+				</bean>
+				<bean class="com.rseg.assignment1.Book">
+					<property name="id" value="202" />
+					<property name="isbn" value="1546257871" />
+					<property name="title"
+						value="Abraham Lincoln: A Concise History of the Man Who Transformed the World" />
+					<property name="price" value="2.99" />
+				</bean>
+				<bean class="com.rseg.assignment1.Book">
+					<property name="id" value="203" />
+					<property name="isbn" value="0735224714" />
+					<property name="title"
+						value="Friends Divided: John Adams and Thomas Jefferson " />
+					<property name="price" value="22.48" />
+				</bean>
+				<bean class="com.rseg.assignment1.Book">
+					<property name="id" value="204" />
+					<property name="isbn" value="0871404354" />
+					<property name="title"
+						value="The Lost Founding Father: John Quincy Adams and the Transformation of American Politics" />
+					<property name="price" value="22.48" />
+				</bean>
+
+
+			</list>
+		</property>
+	</bean>
+</beans>
