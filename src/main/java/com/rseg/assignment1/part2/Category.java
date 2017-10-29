@@ -1,4 +1,4 @@
-package com.rseg.assignment1;
+package com.rseg.assignment1.part2;
 
 import java.util.Iterator;
 import java.util.List;
