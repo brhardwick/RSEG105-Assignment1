@@ -7,11 +7,11 @@ import com.rseg.assignment1.JDBC.Models.Category;
 
 
 @SpringBootApplication
-public class Part1App {
+public class Main {
 
 	public static void main(String[] args) {
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-		ctx.load("classpath:META-INF/Beans.xml");
+		ctx.load("classpath:META-INF/app-context.xml");
 		ctx.refresh();
 		Category j = (Category)ctx.getBean("Java");
 		Category b = (Category)ctx.getBean("Fiction");
