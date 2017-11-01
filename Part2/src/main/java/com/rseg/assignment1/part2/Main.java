@@ -1,13 +1,13 @@
 package com.rseg.assignment1.part2;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 import com.rseg.assignment1.JDBC.DAO.BookCRUD;
 import com.rseg.assignment1.JDBC.DAO.CategoryCRUD;
 import com.rseg.assignment1.JDBC.Models.Book;
 
-@SpringBootApplication
+
 public class Main {
 
 	private static void TestGetAllBooks()
