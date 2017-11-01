@@ -1,12 +1,8 @@
 package com.rseg.assignment1.part1;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.support.GenericXmlApplicationContext;
+import com.rseg.assignment1.Models.Category;
 
-import com.rseg.assignment1.JDBC.Models.Category;
-
-
-@SpringBootApplication
 public class Main {
 
 	public static void main(String[] args) {

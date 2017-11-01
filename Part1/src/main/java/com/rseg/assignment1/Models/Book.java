@@ -1,4 +1,4 @@
-package com.rseg.assignment1.JDBC.Models;
+package com.rseg.assignment1.Models;
 
 import org.springframework.context.annotation.Configuration;
 
