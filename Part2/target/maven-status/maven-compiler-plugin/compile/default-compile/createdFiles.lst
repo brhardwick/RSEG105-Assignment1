@@ -1,0 +1,12 @@
+com\rseg\assignment1\JDBC\Models\Model.class
+com\rseg\assignment1\part2\Main.class
+com\rseg\assignment1\JDBC\DAO\CategoryCRUD$CategoryMapper.class
+com\rseg\assignment1\JDBC\DAO\CategoryCRUD.class
+com\rseg\assignment1\JDBC\DAO\BookCRUD.class
+com\rseg\assignment1\JDBC\Models\Book.class
+com\rseg\assignment1\JDBC\Models\Category.class
+com\rseg\assignment1\JDBC\DAO\CRUDInterface.class
+com\rseg\assignment1\JDBC\DAO\BookCRUD$1.class
+com\rseg\assignment1\JDBC\DAO\CategoryCRUD$1.class
+com\rseg\assignment1\JDBC\DAO\BookCRUD$BookMapper.class
+com\rseg\assignment1\JDBC\DAO\Context.class
